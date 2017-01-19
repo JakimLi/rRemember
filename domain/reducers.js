@@ -1,14 +1,15 @@
 import {generate, shuffle} from './Poker';
+import {types} from './actions';
 
 const initialState = { "remembering": [] };
 
 export default (state = initialState, action) => {
   switch(action.type) {
-    case 'GENERATE':
+    case types.GENERATE:
       return {
         remembering: generate()
       };
-    case 'SHUFFLE':
+    case types.SHUFFLE:
       return {
         remembering: shuffle(state.remembering)
       };

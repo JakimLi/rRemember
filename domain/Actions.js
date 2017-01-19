@@ -1,13 +1,19 @@
+const types = {
+  GENERATE: 'GENERATE',
+  SHUFFLE: 'SHUFFLE'
+}
+
 const generate = () => {
   return {
-    type: 'GENERATE'
+    type: types.GENERATE
   };
 }
 
 const shuffle = () => {
   return {
-    type: 'SHUFFLE'
+    type: types.SHUFFLE
   };
 }
 
-export {generate, shuffle};
+
+export {generate, shuffle, types};
