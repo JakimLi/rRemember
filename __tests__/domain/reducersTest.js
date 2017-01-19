@@ -12,7 +12,22 @@ it('should handle GENERATE action', () => {
 
   const initialState = reducer(undefined, {});
 
-  const generatedSteate = reducer(initialState, actions.generate());
+  const generatedState = reducer(initialState, actions.generate())
 
-  expect(generatedSteate.remembering).toHaveLength(54);
+  expect(generatedState.remembering).toHaveLength(54);
+});
+
+
+it('should handle SHUFFLE action', () => {
+
+  const initialState = reducer(undefined, {});
+
+  const generatedState = reducer(initialState, actions.generate())
+
+  expect(generatedState.remembering).toHaveLength(54);
+
+  const shuffledState = reducer(generatedState, actions.shuffle());
+
+  expect(shuffledState.remembering).toHaveLength(54);
+  expect(JSON.stringify(shuffledState.remembering)).not.toEqual(JSON.stringify(generatedState.remembering));
 });

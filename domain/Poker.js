@@ -19,7 +19,7 @@ const generate = () => {
 };
 
 const shuffle = (cards) => {
-  return cards.sort(() => 0.5 - Math.random());
+  return cards.concat().sort(() => 0.5 - Math.random());
 }
 
 export {generate, shuffle};

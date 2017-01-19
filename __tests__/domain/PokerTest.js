@@ -26,5 +26,5 @@ it('can shuffle give cards', () => {
   const shuffledCards = shuffle(cards);
 
   expect(shuffledCards).toHaveLength(54);
-  expect(JSON.stringify(shuffledCards)).not.toEqual(cards);
+  expect(JSON.stringify(shuffledCards)).not.toEqual(JSON.stringify(cards));
 });
