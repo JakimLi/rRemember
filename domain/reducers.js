@@ -1,5 +1,5 @@
 const initialState = { "remembering": [] };
 
-export default () => {
-  return initialState;
+export default (state = initialState, action) => {
+  return state;
 }
