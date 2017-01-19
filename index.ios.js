@@ -1,22 +1,12 @@
 import React, { Component } from 'react';
-import {
-  AppRegistry,
-  StyleSheet,
-  Text
-} from 'react-native';
+import { AppRegistry } from 'react-native';
+import { createStore } from 'redux';
+import reducer from './domain/reducers';
+import { generate } from './domain/actions';
+import rPoker from './components/rPoker';
 
-export default class rPoker extends Component {
-  render() {
-    return <Text style={styles.text}> Start </Text>;
-  }
-}
+let store = createStore(reducer);
+store.dispatch(generate());
 
-const styles = StyleSheet.create({
-  text: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  }
-});
-
+export default rPoker;
 AppRegistry.registerComponent('rPoker', () => rPoker);

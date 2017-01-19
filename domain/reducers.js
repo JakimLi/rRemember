@@ -1,5 +1,5 @@
-import {generate, shuffle} from './Poker';
-import {types} from './actions';
+import { generate, shuffle } from './Poker';
+import { types } from './actions';
 
 const initialState = { "remembering": [] };
 

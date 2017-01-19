@@ -22,4 +22,4 @@ const shuffle = (cards) => {
   return cards.concat().sort(() => 0.5 - Math.random());
 }
 
-export {generate, shuffle};
+export { generate, shuffle };
