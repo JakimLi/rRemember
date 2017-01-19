@@ -1,4 +1,4 @@
-import * as actions from '../../domain/Actions';
+import * as actions from '../../domain/actions';
 
 it('should create GENERATE action', () => {
   expect(actions.generate()).toEqual({ type: 'GENERATE' });
