@@ -18,4 +18,8 @@ const generate = () => {
   return cards;
 };
 
-export default generate;
+const shuffle = (cards) => {
+  return cards.sort(() => 0.5 - Math.random());
+}
+
+export {generate, shuffle};
