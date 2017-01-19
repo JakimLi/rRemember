@@ -6,3 +6,13 @@ it('should return the initial state', () => {
     "remembering": []
   });
 });
+
+
+it('should handle GENERATE action', () => {
+
+  const initialState = reducer(undefined, {});
+
+  const generatedSteate = reducer(initialState, actions.generate());
+
+  expect(generatedSteate.remembering).toHaveLength(54);
+});
