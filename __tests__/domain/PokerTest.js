@@ -1,7 +1,7 @@
 import {generate, shuffle} from '../../domain/Poker';
 
 const colors = ['Spades', 'Hearts', 'Diamonds', 'Clubs'];
-const points = ['A', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'J', 'Q', 'K'];
+const points = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
 const jokers = ['BJ', 'LJ'];
 
 it('can generate 1 deck of cards without two same cards', () => {
