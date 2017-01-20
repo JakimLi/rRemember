@@ -5,7 +5,7 @@ exports[`test it renders correctly 1`] = `
   style={
     Object {
       "backgroundColor": "#1a2229",
-      "paddingTop": 30,
+      "paddingTop": 100,
     }
   }>
   <Image
