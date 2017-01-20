@@ -1,30 +1,12 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import * as actions from '../domain/actions';
-import images from '../images/images';
-import {
-  StyleSheet,
-  ScrollView,
-  Image,
-  Text
-} from 'react-native';
-
-const styles = StyleSheet.create({
-  text: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  }
-});
+import ShowCards from './ShowCards';
 
 class Poker extends Component {
   render() {
     return (
-      <ScrollView>
-      {this.props.cards.map((card) => {
-        return <Image key={card.color + card.point} source={images[card.color + card.point]} />;
-      })}
-      </ScrollView>
+      <ShowCards cards={this.props.cards} />
     );
   }
 }
