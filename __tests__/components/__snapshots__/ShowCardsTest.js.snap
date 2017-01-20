@@ -1,0 +1,6 @@
+exports[`test it renders correctly 1`] = `
+<ScrollView>
+  <Image
+    source={1} />
+</ScrollView>
+`;
