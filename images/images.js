@@ -53,7 +53,8 @@ var images = {
   "Hearts10": require('./10h.png'),
   "HeartsJ": require('./jh.png'),
   "HeartsQ": require('./qh.png'),
-  "HeartsK": require('./kh.png')
+  "HeartsK": require('./kh.png'),
 
+  "back": require('./back.png')
 }
 export default images;
