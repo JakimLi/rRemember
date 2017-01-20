@@ -9,13 +9,18 @@ import {
 
 const styles = StyleSheet.create({
   scrollView: {
-    margin: 10,
+    paddingTop: 30,
+    backgroundColor: '#1a2229'
   }
 });
 
 export default ({cards}) => {
   return (
-      <ScrollView style={styles.scrollView}>
+      <ScrollView
+      style={styles.scrollView}
+      horizontal={true}
+      pageEnbaled={true}>
+
       {cards.map((card) => {
         return <Image key={card.color + card.point} source={images[card.color + card.point]} />;
       })}
