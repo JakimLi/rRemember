@@ -8,16 +8,14 @@ import {
 } from 'react-native';
 
 const styles = StyleSheet.create({
-  text: {
-    fontSize: 20,
-    textAlign: 'center',
+  scrollView: {
     margin: 10,
   }
 });
 
 export default ({cards}) => {
   return (
-      <ScrollView>
+      <ScrollView style={styles.scrollView}>
       {cards.map((card) => {
         return <Image key={card.color + card.point} source={images[card.color + card.point]} />;
       })}
