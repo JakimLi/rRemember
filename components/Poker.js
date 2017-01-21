@@ -9,7 +9,6 @@ const handlers = (dispatch) => {
   const onStart = () => {
     dispatch(actions.shuffle());
   };
-
   return { onStart };
 }
 
@@ -18,7 +17,7 @@ class Poker extends Component {
     return (
       <View>
         <ShowCards cards={this.props.cards} />
-        <ControlPanel onStart={handlers(this.props.dispatch).onStart} />
+        <ControlPanel handlers={handlers(this.props.dispatch)} />
       </View>
     );
   }

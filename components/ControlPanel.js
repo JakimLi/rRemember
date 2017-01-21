@@ -4,7 +4,8 @@ import {
   Button
 } from 'react-native';
 
-export default ({onStart}) => {
+export default ({handlers}) => {
+  const {onStart} = handlers;
   return (
     <Button title="Start" onPress={onStart}/>
   );
