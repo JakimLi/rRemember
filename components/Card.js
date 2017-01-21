@@ -8,7 +8,8 @@ import {
 const styles = StyleSheet.create({
   card: {
     height: 350,
-    width: 250
+    width: 250,
+    margin: 30
   }
 });
 
