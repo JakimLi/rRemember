@@ -13,8 +13,10 @@ const styles = StyleSheet.create({
   }
 });
 
-export default ({card}) => {
+export default ({card, status}) => {
   return (
-    <Image style={styles.card} key={card.color + card.point} source={images[card.color + card.point]} />
+    <Image
+      style={styles.card} key={card.color + card.point}
+      source={status === 'checking' ? images['back'] : images[card.color + card.point]} />
   );
 }

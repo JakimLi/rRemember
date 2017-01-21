@@ -21,7 +21,9 @@ class Poker extends Component {
   render() {
     return (
       <View>
-        <ShowCards cards={this.props.cards} />
+        <ShowCards
+          status={this.props.status}
+          cards={this.props.cards} />
         <ControlPanel
           status={this.props.status}
           handlers={handlers(this.props.dispatch)} />

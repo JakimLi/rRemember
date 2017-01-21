@@ -14,14 +14,14 @@ const styles = StyleSheet.create({
   }
 });
 
-export default ({cards}) => {
+export default ({status, cards}) => {
   return (
     <ScrollView style={styles.scrollView}
     horizontal={true}
     pageEnbaled={true}>
 
     {cards.map((card) => {
-      return <Card key={card.color + card.point} card={card} />;
+      return <Card key={card.color + card.point} card={card} status={status}/>;
     })}
     </ScrollView>
   )
