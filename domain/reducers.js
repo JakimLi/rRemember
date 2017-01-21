@@ -1,7 +1,8 @@
 import { generate, shuffle } from './Poker';
 import { types } from './actions';
+import Immutable from 'immutable';
 
-const initialState = { "remembering": [] };
+const initialState = Immutable.fromJS({ "remembering": [] });
 
 export default (state = initialState, action) => {
   switch(action.type) {
