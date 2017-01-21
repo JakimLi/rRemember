@@ -13,6 +13,7 @@ exports[`test it renders correctly 1`] = `
     style={
       Object {
         "height": 350,
+        "margin": 30,
         "width": 250,
       }
     } />
