@@ -4,11 +4,7 @@ import {
   Button
 } from 'react-native';
 
-const onStart = () => {
-
-};
-
-export default () => {
+export default ({onStart}) => {
   return (
     <Button title="Start" onPress={onStart}/>
   );

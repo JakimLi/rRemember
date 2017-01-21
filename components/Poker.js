@@ -5,12 +5,20 @@ import ShowCards from './ShowCards';
 import ControlPanel from './ControlPanel';
 import {View} from 'react-native';
 
+const handlers = (dispatch) => {
+  const onStart = () => {
+    dispatch(actions.shuffle());
+  };
+
+  return { onStart };
+}
+
 class Poker extends Component {
   render() {
     return (
       <View>
         <ShowCards cards={this.props.cards} />
-        <ControlPanel />
+        <ControlPanel onStart={handlers(this.props.dispatch).onStart} />
       </View>
     );
   }
@@ -22,4 +30,4 @@ const mapStateToProps = (state) => {
   }
 };
 
-export default PokerContainer = connect(mapStateToProps, actions)(Poker);
+export default PokerContainer = connect(mapStateToProps)(Poker);
