@@ -6,10 +6,11 @@ import ControlPanel from './ControlPanel';
 import {View} from 'react-native';
 
 const handlers = (dispatch) => {
-  const onStart = () => {
+  const shuffle = () => {
     dispatch(actions.shuffle());
   };
-  return { onStart };
+
+  return { shuffle };
 }
 
 class Poker extends Component {
