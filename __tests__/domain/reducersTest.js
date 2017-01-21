@@ -2,9 +2,7 @@ import * as actions from '../../domain/actions';
 import reducer from '../../domain/reducers';
 
 it('should return the initial state', () => {
-  expect(reducer(undefined, {})).toEqual({
-    "remembering": []
-  });
+  expect(reducer(undefined, {})).toEqual({});
 });
 
 
@@ -34,7 +32,7 @@ it('should handle SHUFFLE action', () => {
   expect(JSON.stringify(shuffledState.remembering)).not.toEqual(JSON.stringify(generatedState.remembering));
 });
 
-it('shoudl handle CHECK action', () => {
+it('should handle CHECK action', () => {
 
   const initialState = reducer(undefined, {});
 

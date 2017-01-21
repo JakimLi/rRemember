@@ -1,7 +1,8 @@
 const types = {
   GENERATE: 'GENERATE',
   SHUFFLE: 'SHUFFLE',
-  CHECK: 'CHECK'
+  CHECK: 'CHECK',
+  CHECK_ON_CARD: 'CHECK_ON_CARD'
 };
 
 const generate = () => {
@@ -22,5 +23,12 @@ const check = () => {
   };
 };
 
+const checkOnCard = (card) => {
+  return {
+    type: types.CHECK_ON_CARD,
+    card
+  }
+}
 
-export {generate, shuffle, check, types};
+
+export {generate, shuffle, check, checkOnCard, types};

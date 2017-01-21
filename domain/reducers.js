@@ -1,9 +1,7 @@
 import { generate, shuffle } from './Poker';
 import { types } from './actions';
 
-const initialState = { "remembering": [] };
-
-export default (state = initialState, action) => {
+export default (state = {}, action) => {
   switch(action.type) {
     case types.GENERATE:
       return {
