@@ -5,8 +5,15 @@ import {
   Image
 } from 'react-native';
 
+const styles = StyleSheet.create({
+  card: {
+    height: 350,
+    width: 250
+  }
+});
+
 export default ({card}) => {
   return (
-    <Image key={card.color + card.point} source={images[card.color + card.point]} />
+    <Image style={styles.card} key={card.color + card.point} source={images[card.color + card.point]} />
   );
 }

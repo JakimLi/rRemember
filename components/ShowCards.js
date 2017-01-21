@@ -10,7 +10,7 @@ import Card from './Card';
 const styles = StyleSheet.create({
   scrollView: {
     paddingTop: 100,
-    backgroundColor: '#1a2229'
+    backgroundColor: 'white'
   }
 });
 
