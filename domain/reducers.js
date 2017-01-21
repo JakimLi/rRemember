@@ -6,18 +6,27 @@ export default (state = {}, action) => {
     case types.GENERATE:
       return {
         remembering: generate(),
-        status: 'ready'
+        status: 'ready',
+        checked: []
       };
     case types.SHUFFLE:
       return {
         remembering: shuffle(state.remembering),
-        status: 'remembering'
+        status: 'remembering',
+        checked: []
       };
     case types.CHECK:
       return {
         remembering: state.remembering,
-        status: 'checking'
+        status: 'checking',
+        checked: []
       };
+    case types.CHECK_ON_CARD:
+      return {
+        remembering: state.remembering,
+        status: state.status,
+        checked: state.checked.concat([action.card])
+      }
     default:
       return state;
   }

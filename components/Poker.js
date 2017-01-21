@@ -14,7 +14,11 @@ const handlers = (dispatch) => {
     dispatch(actions.check());
   };
 
-  return { shuffle, check };
+  const checkCard = (card) => {
+    dispatch(actions.checkOnCard(card));
+  };
+
+  return { shuffle, check, checkCard };
 }
 
 class Poker extends Component {
@@ -23,7 +27,9 @@ class Poker extends Component {
       <View>
         <ShowCards
           status={this.props.status}
-          cards={this.props.cards} />
+          cards={this.props.cards}
+          checked={this.props.checked}
+          handlers={handlers(this.props.dispatch)} />
         <ControlPanel
           status={this.props.status}
           handlers={handlers(this.props.dispatch)} />
@@ -35,7 +41,8 @@ class Poker extends Component {
 const mapStateToProps = (state) => {
   return {
     cards: state.remembering,
-    status: state.status
+    status: state.status,
+    checked: state.checked
   }
 };
 

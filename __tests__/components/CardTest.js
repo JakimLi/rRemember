@@ -10,8 +10,12 @@ it('it renders correctly', () => {
     point: 'A'
   }
 
+  const handlers = {
+    checkCard: () => {}
+  }
+
   const cardTree = renderer.create(
-    <Card card={card}/>
+    <Card card={card} checked={[]} handlers={handlers}/>
   );
 
   expect(cardTree).toMatchSnapshot();

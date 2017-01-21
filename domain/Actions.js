@@ -28,7 +28,6 @@ const checkOnCard = (card) => {
     type: types.CHECK_ON_CARD,
     card
   }
-}
-
+};
 
 export {generate, shuffle, check, checkOnCard, types};
