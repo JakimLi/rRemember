@@ -1,11 +1,10 @@
 import * as actions from '../../domain/actions';
 import reducer from '../../domain/reducers';
-import Immutable from 'immutable';
 
 it('should return the initial state', () => {
-  expect(reducer(undefined, {})).toEqual(Immutable.fromJS({
+  expect(reducer(undefined, {})).toEqual({
     "remembering": []
-  }));
+  });
 });
 
 
