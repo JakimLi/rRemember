@@ -4,14 +4,21 @@ import {
   Button
 } from 'react-native';
 
-export default ({handlers}) => {
+export default ({status, handlers}) => {
 
   const onStart = () => {
     const {shuffle} = handlers;
     shuffle();
   }
 
-  return (
-    <Button title="Start" onPress={onStart}/>
-  );
+  const onFinished = () => {
+    const {check} = handlers;
+    check();
+  };
+
+  if (status === 'ready' || status === 'checking') {
+    return <Button title="Start" onPress={onStart}/>;
+  } else {
+    return <Button title="Check" onPress={onFinished}/>;
+  }
 }

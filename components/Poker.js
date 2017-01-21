@@ -10,7 +10,11 @@ const handlers = (dispatch) => {
     dispatch(actions.shuffle());
   };
 
-  return { shuffle };
+  const check = () => {
+    dispatch(actions.check());
+  };
+
+  return { shuffle, check };
 }
 
 class Poker extends Component {
@@ -18,7 +22,9 @@ class Poker extends Component {
     return (
       <View>
         <ShowCards cards={this.props.cards} />
-        <ControlPanel handlers={handlers(this.props.dispatch)} />
+        <ControlPanel
+          status={this.props.status}
+          handlers={handlers(this.props.dispatch)} />
       </View>
     );
   }
@@ -26,7 +32,8 @@ class Poker extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    cards: state.remembering
+    cards: state.remembering,
+    status: state.status
   }
 };
 

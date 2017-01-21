@@ -42,7 +42,7 @@ exports[`test it renders correctly 1`] = `
           },
         ]
       }>
-      Start
+      Check
     </Text>
   </View>
 </View>
