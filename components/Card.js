@@ -13,10 +13,13 @@ const styles = StyleSheet.create({
   }
 });
 
-export default ({card, status}) => {
-  return (
-    <Image
+export default class Card extends Component {
+  render() {
+    const {card, status} = this.props;
+    return (
+      <Image
       style={styles.card} key={card.color + card.point}
       source={status === 'checking' ? images['back'] : images[card.color + card.point]} />
-  );
+    );
+  }
 }
