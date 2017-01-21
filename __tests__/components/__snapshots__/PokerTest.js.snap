@@ -4,117 +4,441 @@ exports[`test it renders correctly 1`] = `
   pageEnbaled={true}
   style={
     Object {
-      "backgroundColor": "#1a2229",
+      "backgroundColor": "white",
       "paddingTop": 100,
     }
   }>
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={1} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={undefined} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
   <Image
-    source={undefined} />
+    source={1}
+    style={
+      Object {
+        "height": 350,
+        "width": 250,
+      }
+    } />
 </ScrollView>
 `;
