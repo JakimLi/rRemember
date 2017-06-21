@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import {
   StyleSheet,
-  Button
+  Button,
+  View
 } from 'react-native';
 
-export default ({status, handlers}) => {
+export default ({status, cardType, handlers}) => {
 
   const onStart = () => {
     const {shuffle} = handlers;
@@ -16,9 +17,26 @@ export default ({status, handlers}) => {
     check();
   };
 
+  const toggleCardType = () => {
+    const {toggleCardType} = handlers;
+    toggleCardType();
+  }
+
   if (status === 'ready' || status === 'checking') {
-    return <Button title="Start" onPress={onStart}/>;
+    return (
+      <View>
+          <Button title="Start" onPress={onStart}/>
+          <Button title={cardType === 'normal' ? 'pretty': 'ugly'}
+                  onPress={toggleCardType}/>
+      </View>
+    );
   } else {
-    return <Button title="Check" onPress={onFinished}/>;
+    return (
+      <View>
+          <Button title="Check" onPress={onFinished}/>
+          <Button title={cardType === 'normal' ? 'pretty': 'ugly'}
+                  onPress={toggleCardType}/>
+      </View>
+    );
   }
 }

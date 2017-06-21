@@ -7,25 +7,36 @@ export default (state = {}, action) => {
       return {
         remembering: generate(),
         status: 'ready',
-        checked: []
+        checked: [],
+        cardType: 'normal'
       };
     case types.SHUFFLE:
       return {
         remembering: shuffle(state.remembering),
         status: 'remembering',
-        checked: []
+        checked: [],
+        cardType: state.cardType
       };
     case types.CHECK:
       return {
         remembering: state.remembering,
         status: 'checking',
-        checked: []
+        checked: [],
+        cardType: state.cardType
       };
     case types.CHECK_ON_CARD:
       return {
         remembering: state.remembering,
         status: state.status,
-        checked: state.checked.concat([action.card])
+        checked: state.checked.concat([action.card]),
+        cardType: state.cardType
+      };
+    case types.TOGGLE_CARD_TYPE:
+      return {
+        remembering: state.remembering,
+        status: state.status,
+        checked: state.checked,
+        cardType: state.cardType === 'normal' ? 'pretty': 'normal'
       }
     default:
       return state;

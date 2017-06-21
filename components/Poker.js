@@ -18,7 +18,11 @@ const handlers = (dispatch) => {
     dispatch(actions.checkOnCard(card));
   };
 
-  return { shuffle, check, checkCard };
+  const toggleCardType = () => {
+    dispatch(actions.toggleCardType());
+  }
+
+  return { shuffle, check, checkCard, toggleCardType };
 }
 
 class Poker extends Component {
@@ -29,9 +33,11 @@ class Poker extends Component {
           status={this.props.status}
           cards={this.props.cards}
           checked={this.props.checked}
+          cardType={this.props.cardType}
           handlers={handlers(this.props.dispatch)} />
         <ControlPanel
           status={this.props.status}
+          cardType={this.props.cardType}
           handlers={handlers(this.props.dispatch)} />
       </View>
     );
@@ -42,7 +48,8 @@ const mapStateToProps = (state) => {
   return {
     cards: state.remembering,
     status: state.status,
-    checked: state.checked
+    checked: state.checked,
+    cardType: state.cardType
   }
 };
 
