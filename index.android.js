@@ -1,53 +1,22 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import React, { Component } from 'react';
-import {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
+import { AppRegistry } from 'react-native';
+import { createStore } from 'redux';
+import reducer from './domain/reducers';
+import { generate } from './domain/actions';
+import PokerContainer from './components/Poker';
+import { Provider } from 'react-redux';
 
-export default class rPoker extends Component {
+let store = createStore(reducer);
+store.dispatch(generate());
+
+export default class PokerApp extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.android.js
-        </Text>
-        <Text style={styles.instructions}>
-          Double tap R on your keyboard to reload,{'\n'}
-          Shake or press menu button for dev menu
-        </Text>
-      </View>
+      <Provider store={ store }>
+        <PokerContainer />
+      </Provider>
     );
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
-
-AppRegistry.registerComponent('rPoker', () => rPoker);
+AppRegistry.registerComponent('rPoker', () => PokerApp);
